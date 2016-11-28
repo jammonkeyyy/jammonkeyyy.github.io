@@ -1,0 +1,17 @@
+int monkey(int n)
+{
+	if (n == 10)
+		return 1;
+	else
+		return 2 * monkey(n+1) + 2;
+}
+#include<iostream>
+using namespace std;
+int main()
+{
+	int n;
+	cin >> n;
+	cout << monkey(n) << endl;
+	cout << monkey(1) << endl;
+	return 0;
+}
